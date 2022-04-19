@@ -26,7 +26,7 @@
     <title>Trust Idiong | Personal Website</title>
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#nav-list" data-offset="0">
     <div class="main-container">
         <div class="aside">
             <div class="logo">
@@ -35,657 +35,671 @@
             <div class="nav-toggler">
                 <span></span>
             </div>
-
-            <div data-spy="scroll" data-target="#nav" data-offset="0">
-
-
-                <ul class="nav">
-                    <li><a href="index.html" class="active" id="Home"><i class="fa fa-home"></i>Home</a></li>
-                    <li><a href="#about" id="About"><i class="fa fa-user"></i>About</a></li>
-                    <li><a href="#services" id="Services"><i class="fa fa-list"></i>Services</a></li>
-                    <li><a href="#portfolio" id="Portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></li>
-                    <li><a href="#contact" id="Contact"><i class="fa fa-comments"></i>Contact</a></li>
-                </ul>
+            <!--<ul class="nav" id="main-navbar">
+                <li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="#about"><i class="fa fa-user"></i>About</a></li>
+                <li><a href="#services"><i class="fa fa-list"></i>Services</a></li>
+                <li><a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></li>
+                <li><a href="#contact"><i class="fa fa-comments"></i>Contact</a></li>
+            </ul>-->
+            <div id="nav-list" class="list-group">
+                <a class="list-group-item list-group-item-action" href="#home"><i class="fa fa-home"></i>Home</a>
+                <a class="list-group-item list-group-item-action" href="#about"><i class="fa fa-user"></i>About</a>
+                <a class="list-group-item list-group-item-action" href="#services"><i class="fa fa-user"></i>Services</a>
+                <a class="list-group-item list-group-item-action" href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a>
+                <a class="list-group-item list-group-item-action" href="#contact"><i class="fa fa-comments"></i>Contact</a>
             </div>
         </div>
-        <div class="main-content">
-            <!--HOME-->
-            <section class="home section">
-                <div class="container" id="home">
-                    <div class="row">
-                        <div class="home-info padd-15">
-                            <h3 class="hello">Hello, my name is <span class="name">Trust Idiong</span></h3>
-                            <h3 class="my-profession">I am a <span class="typing">Software Developer</span></h3>
-                            <p>I am a software developer with amazing capabilities in Web Site Design & Development, Object-Oriented Programming, Project Teamwork & Communication, Agile software development, and many more ...
+    </div>
+    <div class="main-content">
+        <!--HOME-->
+        <section class="home section" id="home">
+            <div class="container">
+                <div class="row">
+                    <div class="home-info padd-15">
+                        <h3 class="hello">Hello, my name is <span class="name">Trust Idiong</span></h3>
+                        <h3 class="my-profession">I am a <span class="typing">Software Developer</span></h3>
+                        <p>I am a software developer with amazing capabilities in Web Site Design & Development, Object-Oriented Programming, Project Teamwork & Communication, Agile software development, and many more ...
+                        </p>
+                        <a href="#contact" class="btn hire-me">Hire Me</a>
+                    </div>
+                    <div class="home-img padd-15">
+                        <img src="images/MY-PIX.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--ABOUT-->
+        <section class="about section" id="about">
+            <div class="container">
+                <!-- About me header row-->
+                <div class="row">
+                    <div class="section-title padd-15">
+                        <h2>About Me</h2>
+                    </div>
+                </div>
+                <!-- About-text row-->
+                <div class="row">
+                    <div class="about-content padd-15">
+                        <div class="row">
+                            <div class="about-text padd-15">
+                                <h3>I'm Trust Idiong, a <span>software developer</span></h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, consequuntur magnam reprehenderit culpa non modi inventore, vel totam pariatur magni sapiente eos, excepturi sit eaque dolor aliquid minus? Expedita, vero?</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="personal-info padd-15">
+                                <div class="row">
+                                    <div class="info-item padd-15">
+                                        <p>Email: <span>itrust.ti@gmail.com</span></p>
+                                    </div>
+                                    <div class="info-item padd-15">
+                                        <p>website: <span>www.localhost.com</span></p>
+                                    </div>
+                                    <div class="info-item padd-15">
+                                        <p>Education: <span>B.Sc in CS</span></p>
+                                    </div>
+                                    <div class="info-item padd-15">
+                                        <p>Phone: <span>+234 706 853 4612</span></p>
+                                    </div>
+                                    <div class="info-item padd-15">
+                                        <p>Date of Birth: <span>24 December 1987</span></p>
+                                    </div>
+                                    <div class="info-item padd-15">
+                                        <p>Availability: <span>Short notice</span></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="buttons padd-15">
+                                        <a href="#" class="btn">Download CV</a>
+                                        <a href="#contact" class="btn hire-me">Hire Me</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skills padd-15">
+                                <div class="row">
+                                    <div class="skill-item padd-15">
+                                        <h5>CSS</h5>
+                                        <div class="progress">
+                                            <div class="progress-in progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width: 77%">
+                                                <div class="skill-percent">77%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item padd-15">
+                                        <h5>JS</h5>
+                                        <div class="progress">
+                                            <div class="progress-in progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width: 65%">
+                                                <div class="skill-percent">65%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item padd-15">
+                                        <h5>HTML</h5>
+                                        <div class="progress">
+                                            <div class="progress-in progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width: 96%">
+                                                <div class="skill-percent">96%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item padd-15">
+                                        <h5>Bootstrap</h5>
+                                        <div class="progress">
+                                            <div class="progress-in progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width: 80%">
+                                                <div class="skill-percent">80%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item padd-15">
+                                        <h5>Python</h5>
+                                        <div class="progress">
+                                            <div class="progress-in progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width: 67%">
+                                                <div class="skill-percent">67%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item padd-15">
+                                        <h5>Java</h5>
+                                        <div class="progress">
+                                            <div class="progress-in progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width: 50%">
+                                                <div class="skill-percent">50%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item padd-15">
+                                        <h5>C++</h5>
+                                        <div class="progress">
+                                            <div class="progress-in progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width: 44%">
+                                                <div class="skill-percent">44%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="education">
+                                    <h3 class="title">Education</h3>
+                                    <div class="row">
+                                        <div class="timeline-box padd-15">
+                                            <div class="timeline shadow-dark">
+                                                <!-- ===== TIMELINE ITEM ===== -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2007 - 2013
+                                                    </h3>
+                                                    <h4 class="timeline-title">B.Sc in Computer Science</h4>
+                                                    <p class="timeline-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet dolorum expedita eum maiores iste repudiandae, placeat atque veniam repellendus ipsum sequi. Excepturi quia voluptates praesentium repellendus
+                                                        ducimus dolor cumque atque.</p>
+                                                </div>
+                                                <!-- ===== TIMELINE ITEM ===== -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2007 - 2013
+                                                    </h3>
+                                                    <h4 class="timeline-title">B.Sc in Computer Science</h4>
+                                                    <p class="timeline-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet dolorum expedita eum maiores iste repudiandae, placeat atque veniam repellendus ipsum sequi. Excepturi quia voluptates praesentium repellendus
+                                                        ducimus dolor cumque atque.</p>
+                                                </div>
+                                                <!-- ===== TIMELINE ITEM ===== -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2007 - 2013
+                                                    </h3>
+                                                    <h4 class="timeline-title">B.Sc in Computer Science</h4>
+                                                    <p class="timeline-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet dolorum expedita eum maiores iste repudiandae, placeat atque veniam repellendus ipsum sequi. Excepturi quia voluptates praesentium repellendus
+                                                        ducimus dolor cumque atque.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="experience">
+                                    <h3 class="title">Experience</h3>
+                                    <div class="row">
+                                        <div class="timeline-box padd-15">
+                                            <div class="timeline shadow-dark">
+                                                <!-- ===== TIMELINE ITEM ===== -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2007 - 2013
+                                                    </h3>
+                                                    <h4 class="timeline-title">B.Sc in Computer Science</h4>
+                                                    <p class="timeline-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet dolorum expedita eum maiores iste repudiandae, placeat atque veniam repellendus ipsum sequi. Excepturi quia voluptates praesentium repellendus
+                                                        ducimus dolor cumque atque.</p>
+                                                </div>
+                                                <!-- ===== TIMELINE ITEM ===== -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2007 - 2013
+                                                    </h3>
+                                                    <h4 class="timeline-title">B.Sc in Computer Science</h4>
+                                                    <p class="timeline-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet dolorum expedita eum maiores iste repudiandae, placeat atque veniam repellendus ipsum sequi. Excepturi quia voluptates praesentium repellendus
+                                                        ducimus dolor cumque atque.</p>
+                                                </div>
+                                                <!-- ===== TIMELINE ITEM ===== -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2007 - 2013
+                                                    </h3>
+                                                    <h4 class="timeline-title">B.Sc in Computer Science</h4>
+                                                    <p class="timeline-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet dolorum expedita eum maiores iste repudiandae, placeat atque veniam repellendus ipsum sequi. Excepturi quia voluptates praesentium repellendus
+                                                        ducimus dolor cumque atque.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Personal Info row-->
+
+            </div>
+        </section>
+        <section class="service section" id="services">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title padd-15">
+                        <h2>Services</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Service Item-->
+                    <div class="service-item padd-15">
+                        <div class="service-item-inner">
+                            <div class="icon">
+                                <i class="fa fa-mobile-alt"></i>
+                            </div>
+                            <h4>Web design</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi corrupti temporibus cumque voluptatibus eum ab, eaque inventore? Delectus sunt ad laboriosam nihil omnis atque, mollitia excepturi? Consectetur laboriosam inventore
+                                neque!
                             </p>
-                            <a href="#contact" class="btn hire-me">Hire Me</a>
-                        </div>
-                        <div class="home-img padd-15">
-                            <img src="images/MY-PIX.jpg" alt="">
                         </div>
                     </div>
-                </div>
-            </section>
-            <!--ABOUT-->
-            <section class="about section">
-                <div class="container">
-                    <!-- About me header row-->
-                    <div class="row">
-                        <div class="section-title padd-15" id="about">
-                            <h2>About Me</h2>
-                        </div>
-                    </div>
-                    <!-- About-text row-->
-                    <div class="row">
-                        <div class="about-content padd-15">
-                            <div class="row">
-                                <div class="about-text padd-15">
-                                    <h3>I'm Trust Idiong, a <span>software developer</span></h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, consequuntur magnam reprehenderit culpa non modi inventore, vel totam pariatur magni sapiente eos, excepturi sit eaque dolor aliquid minus? Expedita, vero?</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="personal-info padd-15">
-                                    <div class="row">
-                                        <div class="info-item padd-15">
-                                            <p>Email: <span>itrust.ti@gmail.com</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>website: <span>www.localhost.com</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>Education: <span>B.Sc in CS</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>Phone: <span>+234 706 853 4612</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>Date of Birth: <span>24 December 1987</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>Availability: <span>Short notice</span></p>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="buttons padd-15">
-                                            <a href="#" class="btn">Download CV</a>
-                                            <a href="#contact" class="btn hire-me">Hire Me</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="skills padd-15">
-                                    <div class="row">
-                                        <div class="skill-item padd-15">
-                                            <h5>CSS</h5>
-                                            <div class="progress">
-                                                <div class="progress-in progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width: 77%">
-                                                    <div class="skill-percent">77%</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>JS</h5>
-                                            <div class="progress">
-                                                <div class="progress-in progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width: 65%">
-                                                    <div class="skill-percent">65%</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>HTML</h5>
-                                            <div class="progress">
-                                                <div class="progress-in progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width: 96%">
-                                                    <div class="skill-percent">96%</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>Bootstrap</h5>
-                                            <div class="progress">
-                                                <div class="progress-in progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width: 80%">
-                                                    <div class="skill-percent">80%</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>Python</h5>
-                                            <div class="progress">
-                                                <div class="progress-in progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width: 67%">
-                                                    <div class="skill-percent">67%</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>Java</h5>
-                                            <div class="progress">
-                                                <div class="progress-in progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width: 50%">
-                                                    <div class="skill-percent">50%</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>C++</h5>
-                                            <div class="progress">
-                                                <div class="progress-in progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width: 44%">
-                                                    <div class="skill-percent">44%</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="education">
-                                        <h3 class="title">Education</h3>
-                                        <div class="row">
-                                            <div class="timeline-box padd-15">
-                                                <div class="timeline shadow-dark">
-                                                    <!-- ===== TIMELINE ITEM ===== -->
-                                                    <div class="timeline-item">
-                                                        <div class="circle-dot"></div>
-                                                        <h3 class="timeline-date">
-                                                            <i class="fa fa-calendar"></i> 2007 - 2013
-                                                        </h3>
-                                                        <h4 class="timeline-title">B.Sc in Computer Science</h4>
-                                                        <p class="timeline-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet dolorum expedita eum maiores iste repudiandae, placeat atque veniam repellendus ipsum sequi. Excepturi quia voluptates praesentium repellendus
-                                                            ducimus dolor cumque atque.</p>
-                                                    </div>
-                                                    <!-- ===== TIMELINE ITEM ===== -->
-                                                    <div class="timeline-item">
-                                                        <div class="circle-dot"></div>
-                                                        <h3 class="timeline-date">
-                                                            <i class="fa fa-calendar"></i> 2007 - 2013
-                                                        </h3>
-                                                        <h4 class="timeline-title">B.Sc in Computer Science</h4>
-                                                        <p class="timeline-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet dolorum expedita eum maiores iste repudiandae, placeat atque veniam repellendus ipsum sequi. Excepturi quia voluptates praesentium repellendus
-                                                            ducimus dolor cumque atque.</p>
-                                                    </div>
-                                                    <!-- ===== TIMELINE ITEM ===== -->
-                                                    <div class="timeline-item">
-                                                        <div class="circle-dot"></div>
-                                                        <h3 class="timeline-date">
-                                                            <i class="fa fa-calendar"></i> 2007 - 2013
-                                                        </h3>
-                                                        <h4 class="timeline-title">B.Sc in Computer Science</h4>
-                                                        <p class="timeline-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet dolorum expedita eum maiores iste repudiandae, placeat atque veniam repellendus ipsum sequi. Excepturi quia voluptates praesentium repellendus
-                                                            ducimus dolor cumque atque.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="experience">
-                                        <h3 class="title">Experience</h3>
-                                        <div class="row">
-                                            <div class="timeline-box padd-15">
-                                                <div class="timeline shadow-dark">
-                                                    <!-- ===== TIMELINE ITEM ===== -->
-                                                    <div class="timeline-item">
-                                                        <div class="circle-dot"></div>
-                                                        <h3 class="timeline-date">
-                                                            <i class="fa fa-calendar"></i> 2007 - 2013
-                                                        </h3>
-                                                        <h4 class="timeline-title">B.Sc in Computer Science</h4>
-                                                        <p class="timeline-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet dolorum expedita eum maiores iste repudiandae, placeat atque veniam repellendus ipsum sequi. Excepturi quia voluptates praesentium repellendus
-                                                            ducimus dolor cumque atque.</p>
-                                                    </div>
-                                                    <!-- ===== TIMELINE ITEM ===== -->
-                                                    <div class="timeline-item">
-                                                        <div class="circle-dot"></div>
-                                                        <h3 class="timeline-date">
-                                                            <i class="fa fa-calendar"></i> 2007 - 2013
-                                                        </h3>
-                                                        <h4 class="timeline-title">B.Sc in Computer Science</h4>
-                                                        <p class="timeline-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet dolorum expedita eum maiores iste repudiandae, placeat atque veniam repellendus ipsum sequi. Excepturi quia voluptates praesentium repellendus
-                                                            ducimus dolor cumque atque.</p>
-                                                    </div>
-                                                    <!-- ===== TIMELINE ITEM ===== -->
-                                                    <div class="timeline-item">
-                                                        <div class="circle-dot"></div>
-                                                        <h3 class="timeline-date">
-                                                            <i class="fa fa-calendar"></i> 2007 - 2013
-                                                        </h3>
-                                                        <h4 class="timeline-title">B.Sc in Computer Science</h4>
-                                                        <p class="timeline-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet dolorum expedita eum maiores iste repudiandae, placeat atque veniam repellendus ipsum sequi. Excepturi quia voluptates praesentium repellendus
-                                                            ducimus dolor cumque atque.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Personal Info row-->
-
-                </div>
-            </section>
-            <section class="service section">
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title padd-15" id="services">
-                            <h2>Services</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <!-- Service Item-->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-mobile-alt"></i>
-                                </div>
-                                <h4>Web design</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi corrupti temporibus cumque voluptatibus eum ab, eaque inventore? Delectus sunt ad laboriosam nihil omnis atque, mollitia excepturi? Consectetur laboriosam
-                                    inventore neque!</p>
-                            </div>
-                        </div>
-                        <!-- Service Item-->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-laptop-code"></i>
-                                </div>
-                                <h4>Software development</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi corrupti temporibus cumque voluptatibus eum ab, eaque inventore? Delectus sunt ad laboriosam nihil omnis atque, mollitia excepturi? Consectetur laboriosam
-                                    inventore neque!</p>
-                            </div>
-                        </div>
-                        <!-- Service Item-->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-palette"></i>
-                                </div>
-                                <h4>Web design</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi corrupti temporibus cumque voluptatibus eum ab, eaque inventore? Delectus sunt ad laboriosam nihil omnis atque, mollitia excepturi? Consectetur laboriosam
-                                    inventore neque!</p>
-                            </div>
-                        </div>
-                        <!-- Service Item-->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-code"></i>
-                                </div>
-                                <h4>Web design</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi corrupti temporibus cumque voluptatibus eum ab, eaque inventore? Delectus sunt ad laboriosam nihil omnis atque, mollitia excepturi? Consectetur laboriosam
-                                    inventore neque!</p>
-                            </div>
-                        </div>
-                        <!-- Service Item-->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-search"></i>
-                                </div>
-                                <h4>Web design</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi corrupti temporibus cumque voluptatibus eum ab, eaque inventore? Delectus sunt ad laboriosam nihil omnis atque, mollitia excepturi? Consectetur laboriosam
-                                    inventore neque!</p>
-                            </div>
-                        </div>
-                        <!-- Service Item-->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-bullhorn"></i>
-                                </div>
-                                <h4>Web design</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi corrupti temporibus cumque voluptatibus eum ab, eaque inventore? Delectus sunt ad laboriosam nihil omnis atque, mollitia excepturi? Consectetur laboriosam
-                                    inventore neque!</p>
-                            </div>
-                        </div>
-
-
-                    </div>
-                </div>
-            </section>
-            <section class="portfolio section padd-15">
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title padd-15" id="portfolio">
-                            <h2>Portfolio</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="portfolio-heading padd-15">
-                            <h2>My Projects: </h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <!--Portfolio Item-->
-
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-
-                                    <img src="images/1.PNG" alt="" data-toggle="modal" data-target="#transcriptionSoftware" />
-
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Modal -->
-                        <div class="modal fade" id="transcriptionSoftware" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <!-- <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>-->
-                                        <button type="button" class="close" id="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                  </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div class="card mb-3">
-                                            <img class="card-img-top" src="images/1.PNG" alt="Card image cap">
-                                            <div class="card-body">
-                                                <h5 class="card-title card-title1">Transcription software</h5>
-                                                <p class="card-text card-text1">This was a speech-to-text transcription software built to client specification. It was also a language recognizer and could identify up to <strong>255</strong> languages. The software was built to aid communication
-                                                    with deaf persons.</p>
-                                                <p class="card-text"><small class="text-muted">Completed and delivered</small></p>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Portfolio Item-->
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="images/2.PNG" alt="" data-toggle="modal" data-target="#transcriptionSoftware" />
-
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Modal -->
-                        <div class="modal fade" id="transcriptionSoftware" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <!-- <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>-->
-                                        <button type="button" class="close" id="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                  </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div class="card mb-3">
-                                            <img class="card-img-top" src="images/2.PNG" alt="Card image cap">
-                                            <div class="card-body">
-                                                <h5 class="card-title card-title1">Students online forum</h5>
-                                                <p class="card-text card-text1">This was a speech-to-text transcription software built to client specification. It was also a language recognizer and could identify up to <strong>255</strong> languages. The software was built to aid communication
-                                                    with deaf persons.</p>
-                                                <p class="card-text"><small class="text-muted">Completed and delivered</small></p>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-                        <!--Portfolio Item-->
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="images/3.PNG" alt="" data-toggle="modal" data-target="#transcriptionSoftware" />
-
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Modal -->
-                        <div class="modal fade" id="transcriptionSoftware" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <!-- <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>-->
-                                        <button type="button" class="close" id="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                  </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div class="card mb-3">
-                                            <img class="card-img-top" src="images/3.PNG" alt="Card image cap">
-                                            <div class="card-body">
-                                                <h5 class="card-title card-title1">Autos Blog</h5>
-                                                <p class="card-text card-text1">This was a speech-to-text transcription software built to client specification. It was also a language recognizer and could identify up to <strong>255</strong> languages. The software was built to aid communication
-                                                    with deaf persons.</p>
-                                                <p class="card-text"><small class="text-muted">Completed and delivered</small></p>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Portfolio Item-->
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="images/4.PNG" alt="" data-toggle="modal" data-target="#transcriptionSoftware" />
-
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Modal -->
-                        <div class="modal fade" id="transcriptionSoftware" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <!-- <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>-->
-                                        <button type="button" class="close" id="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                  </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div class="card mb-3">
-                                            <img class="card-img-top" src="images/4.PNG" alt="Card image cap">
-                                            <div class="card-body">
-                                                <h5 class="card-title card-title1">Learning Management System</h5>
-                                                <p class="card-text card-text1">This was a speech-to-text transcription software built to client specification. It was also a language recognizer and could identify up to <strong>255</strong> languages. The software was built to aid communication
-                                                    with deaf persons.</p>
-                                                <p class="card-text"><small class="text-muted">Completed and delivered</small></p>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Portfolio Item-->
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="images/5.PNG" alt="" data-toggle="modal" data-target="#transcriptionSoftware" />
-
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Modal -->
-                        <div class="modal fade" id="transcriptionSoftware" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <!-- <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>-->
-                                        <button type="button" class="close" id="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                  </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div class="card mb-3">
-                                            <img class="card-img-top" src="images/5.PNG" alt="Card image cap">
-                                            <div class="card-body">
-                                                <h5 class="card-title card-title1">Plagiarism Checker</h5>
-                                                <p class="card-text card-text1">This was a speech-to-text transcription software built to client specification. It was also a language recognizer and could identify up to <strong>255</strong> languages. The software was built to aid communication
-                                                    with deaf persons.</p>
-                                                <p class="card-text"><small class="text-muted">Completed and delivered</small></p>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Portfolio Item-->
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="images/6.PNG" alt="" data-toggle="modal" data-target="#transcriptionSoftware" />
-
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Modal -->
-                        <div class="modal fade" id="transcriptionSoftware" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <!-- <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>-->
-                                        <button type="button" class="close" id="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                  </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div class="card mb-3">
-                                            <img class="card-img-top" src="images/6.PNG" alt="Card image cap">
-                                            <div class="card-body">
-                                                <h5 class="card-title card-title1">Crowd Networking Page</h5>
-                                                <p class="card-text card-text1">This was a speech-to-text transcription software built to client specification. It was also a language recognizer and could identify up to <strong>255</strong> languages. The software was built to aid communication
-                                                    with deaf persons.</p>
-                                                <p class="card-text"><small class="text-muted">Completed and delivered</small></p>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-            </section>
-
-            <section class="contact section">
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title padd-15" id="contact">
-                            <h2>Contact Me</h2>
-                        </div>
-                    </div>
-                    <h3 class="contact-title padd-15">Have You Any Questions</h3>
-                    <h4 class="contact-sub-title padd-15">I'M AT YOUR SERVICES</h4>
-                    <div class="row">
-                        <!--Contact item-->
-                        <div class="contact-info-item padd-15">
-                            <div class="icon"><i class="fa fa-phone"></i></div>
-                            <h4>Call Us On:</h4>
-                            <p>+234 706 8523 614</p>
-                        </div>
-                        <!--Contact item-->
-                        <div class="contact-info-item padd-15">
+                    <!-- Service Item-->
+                    <div class="service-item padd-15">
+                        <div class="service-item-inner">
                             <div class="icon">
-                                <i class="fa fa-map-marker-alt"></i>
+                                <i class="fa fa-laptop-code"></i>
                             </div>
-                            <h4>Location:</h4>
-                            <p>Lagos</p>
-                        </div>
-                        <!--Contact item-->
-                        <div class="contact-info-item padd-15">
-                            <div class="icon"> <i class="fa fa-envelope"></i></div>
-                            <h4>Email:</h4>
-                            <p>itrust.ti@gmail.com</p>
-                        </div>
-                        <!--Contact item-->
-                        <div class="contact-info-item padd-15">
-                            <div class="icon">
-                                <i class="fa fa-globe-europe"></i>
-                            </div>
-                            <h4>Website:</h4>
-                            <p>www.domain.com</p>
+                            <h4>Software development</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi corrupti temporibus cumque voluptatibus eum ab, eaque inventore? Delectus sunt ad laboriosam nihil omnis atque, mollitia excepturi? Consectetur laboriosam inventore
+                                neque!
+                            </p>
                         </div>
                     </div>
-                    <h3 class="contact-title padd-15">SEND ME AN EMAIL</h3>
-                    <h4 class="contact-sub-title padd-15">I'M VERY RESPONSIVE TO MESSAGES</h4>
-                    <!-- CONTACT FORM -->
-                    <div class="row">
-                        <form name="contact" method="POST" data-netlify="true">
-                            <div class="contact-form padd-15">
-                                <div class="row">
-                                    <div class="form-item col-6 padd-15">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Name">
+                    <!-- Service Item-->
+                    <div class="service-item padd-15">
+                        <div class="service-item-inner">
+                            <div class="icon">
+                                <i class="fa fa-palette"></i>
+                            </div>
+                            <h4>Web design</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi corrupti temporibus cumque voluptatibus eum ab, eaque inventore? Delectus sunt ad laboriosam nihil omnis atque, mollitia excepturi? Consectetur laboriosam inventore
+                                neque!
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Service Item-->
+                    <div class="service-item padd-15">
+                        <div class="service-item-inner">
+                            <div class="icon">
+                                <i class="fa fa-code"></i>
+                            </div>
+                            <h4>Web design</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi corrupti temporibus cumque voluptatibus eum ab, eaque inventore? Delectus sunt ad laboriosam nihil omnis atque, mollitia excepturi? Consectetur laboriosam inventore
+                                neque!
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Service Item-->
+                    <div class="service-item padd-15">
+                        <div class="service-item-inner">
+                            <div class="icon">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <h4>Web design</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi corrupti temporibus cumque voluptatibus eum ab, eaque inventore? Delectus sunt ad laboriosam nihil omnis atque, mollitia excepturi? Consectetur laboriosam inventore
+                                neque!
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Service Item-->
+                    <div class="service-item padd-15">
+                        <div class="service-item-inner">
+                            <div class="icon">
+                                <i class="fa fa-bullhorn"></i>
+                            </div>
+                            <h4>Web design</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi corrupti temporibus cumque voluptatibus eum ab, eaque inventore? Delectus sunt ad laboriosam nihil omnis atque, mollitia excepturi? Consectetur laboriosam inventore
+                                neque!
+                            </p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        <section class="portfolio section padd-15" id="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title padd-15">
+                        <h2>Portfolio</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="portfolio-heading padd-15">
+                        <h2>My Projects: </h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <!--Portfolio Item-->
+
+                    <div class="portfolio-item padd-15">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+
+                                <img src="images/1.PNG" alt="" data-toggle="modal" data-target="#transcriptionSoftware" />
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="transcriptionSoftware" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <!-- <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>-->
+                                    <button type="button" class="close" id="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="card mb-3">
+                                        <img class="card-img-top" src="images/1.PNG" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title card-title1">Transcription software</h5>
+                                            <p class="card-text card-text1">This was a speech-to-text transcription software built to client specification. It was also a language recognizer and could identify up to <strong>255</strong> languages. The software was built to aid communication
+                                                with deaf persons.</p>
+                                            <p class="card-text"><small class="text-muted">Completed and delivered</small></p>
                                         </div>
                                     </div>
-                                    <div class="form-item col-6 padd-15">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Email">
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Portfolio Item-->
+                    <div class="portfolio-item padd-15">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="images/2.PNG" alt="" data-toggle="modal" data-target="#transcriptionSoftware" />
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="transcriptionSoftware" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <!-- <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>-->
+                                    <button type="button" class="close" id="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="card mb-3">
+                                        <img class="card-img-top" src="images/2.PNG" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title card-title1">Students online forum</h5>
+                                            <p class="card-text card-text1">This was a speech-to-text transcription software built to client specification. It was also a language recognizer and could identify up to <strong>255</strong> languages. The software was built to aid communication
+                                                with deaf persons.</p>
+                                            <p class="card-text"><small class="text-muted">Completed and delivered</small></p>
                                         </div>
+                                    </div>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!--Portfolio Item-->
+                    <div class="portfolio-item padd-15">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="images/3.PNG" alt="" data-toggle="modal" data-target="#transcriptionSoftware" />
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="transcriptionSoftware" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <!-- <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>-->
+                                    <button type="button" class="close" id="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="card mb-3">
+                                        <img class="card-img-top" src="images/3.PNG" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title card-title1">Autos Blog</h5>
+                                            <p class="card-text card-text1">This was a speech-to-text transcription software built to client specification. It was also a language recognizer and could identify up to <strong>255</strong> languages. The software was built to aid communication
+                                                with deaf persons.</p>
+                                            <p class="card-text"><small class="text-muted">Completed and delivered</small></p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Portfolio Item-->
+                    <div class="portfolio-item padd-15">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="images/4.PNG" alt="" data-toggle="modal" data-target="#transcriptionSoftware" />
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="transcriptionSoftware" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <!-- <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>-->
+                                    <button type="button" class="close" id="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="card mb-3">
+                                        <img class="card-img-top" src="images/4.PNG" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title card-title1">Learning Management System</h5>
+                                            <p class="card-text card-text1">This was a speech-to-text transcription software built to client specification. It was also a language recognizer and could identify up to <strong>255</strong> languages. The software was built to aid communication
+                                                with deaf persons.</p>
+                                            <p class="card-text"><small class="text-muted">Completed and delivered</small></p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Portfolio Item-->
+                    <div class="portfolio-item padd-15">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="images/5.PNG" alt="" data-toggle="modal" data-target="#transcriptionSoftware" />
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="transcriptionSoftware" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <!-- <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>-->
+                                    <button type="button" class="close" id="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="card mb-3">
+                                        <img class="card-img-top" src="images/5.PNG" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title card-title1">Plagiarism Checker</h5>
+                                            <p class="card-text card-text1">This was a speech-to-text transcription software built to client specification. It was also a language recognizer and could identify up to <strong>255</strong> languages. The software was built to aid communication
+                                                with deaf persons.</p>
+                                            <p class="card-text"><small class="text-muted">Completed and delivered</small></p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Portfolio Item-->
+                    <div class="portfolio-item padd-15">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="images/6.PNG" alt="" data-toggle="modal" data-target="#transcriptionSoftware" />
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="transcriptionSoftware" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <!-- <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>-->
+                                    <button type="button" class="close" id="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="card mb-3">
+                                        <img class="card-img-top" src="images/6.PNG" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title card-title1">Crowd Networking Page</h5>
+                                            <p class="card-text card-text1">This was a speech-to-text transcription software built to client specification. It was also a language recognizer and could identify up to <strong>255</strong> languages. The software was built to aid communication
+                                                with deaf persons.</p>
+                                            <p class="card-text"><small class="text-muted">Completed and delivered</small></p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title padd-15">
+                        <h2 id="Contact">Contact Me</h2>
+                    </div>
+                </div>
+                <h3 class="contact-title padd-15">Have You Any Questions</h3>
+                <h4 class="contact-sub-title padd-15">I'M AT YOUR SERVICES</h4>
+                <div class="row">
+                    <!--Contact item-->
+                    <div class="contact-info-item padd-15">
+                        <div class="icon"><i class="fa fa-phone"></i></div>
+                        <h4>Call Us On:</h4>
+                        <p>+234 706 8523 614</p>
+                    </div>
+                    <!--Contact item-->
+                    <div class="contact-info-item padd-15">
+                        <div class="icon">
+                            <i class="fa fa-map-marker-alt"></i>
+                        </div>
+                        <h4>Location:</h4>
+                        <p>Lagos</p>
+                    </div>
+                    <!--Contact item-->
+                    <div class="contact-info-item padd-15">
+                        <div class="icon"> <i class="fa fa-envelope"></i></div>
+                        <h4>Email:</h4>
+                        <p>itrust.ti@gmail.com</p>
+                    </div>
+                    <!--Contact item-->
+                    <div class="contact-info-item padd-15">
+                        <div class="icon">
+                            <i class="fa fa-globe-europe"></i>
+                        </div>
+                        <h4>Website:</h4>
+                        <p>www.domain.com</p>
+                    </div>
+                </div>
+                <h3 class="contact-title padd-15">SEND ME AN EMAIL</h3>
+                <h4 class="contact-sub-title padd-15">I'M VERY RESPONSIVE TO MESSAGES</h4>
+                <!-- CONTACT FORM -->
+                <div class="row">
+                    <form name="contact" method="POST" data-netlify="true">
+                        <div class="contact-form padd-15">
+                            <div class="row">
+                                <div class="form-item col-6 padd-15">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Name">
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="form-item col-12 padd-15">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Subject">
-                                        </div>
+                                <div class="form-item col-6 padd-15">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Email">
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="form-item col-12 padd-15">
-                                        <div class="form-group">
-                                            <textarea type="text" class="form-control" placeholder="Message">
+                            </div>
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Subject">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <div class="form-group">
+                                        <textarea type="text" class="form-control" placeholder="Message">
                                              
                                         </textarea>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="form-item col-12 padd-15">
-                                        <button class="btn" type="submit">Send Message</button>
                                     </div>
                                 </div>
                             </div>
-                        </form>
-                    </div>
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <button class="btn" type="submit">Send Message</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-            </section>
             </div>
-            <div class="style-switcher">
-                <div class="style-swithcer-toggler s-icon">
-                    <i class="fas fa-cog fa-spin"></i>
-                </div>
-                <div class="day-night s-icon">
-                    <i class="fas fa-moon"></i>
-                </div>
-                <h4>Theme Colors</h4>
-                <div class="colors">
-                    <span class="color-1" onclick="SetActiveStyle('color-1')"></span>
-                    <span class="color-2" onclick="SetActiveStyle('color-2')"></span>
-                    <span class="color-3" onclick="SetActiveStyle('color-3')"></span>
-                    <span class="color-4" onclick="SetActiveStyle('color-4')"></span>
-                    <span class="color-5" onclick="SetActiveStyle('color-5')"></span>
-                </div>
+        </section>
+        </div>
+        <div class="style-switcher">
+            <div class="style-swithcer-toggler s-icon">
+                <i class="fas fa-cog fa-spin"></i>
+            </div>
+            <div class="day-night s-icon">
+                <i class="fas fa-moon"></i>
+            </div>
+            <h4>Theme Colors</h4>
+            <div class="colors">
+                <span class="color-1" onclick="SetActiveStyle('color-1')"></span>
+                <span class="color-2" onclick="SetActiveStyle('color-2')"></span>
+                <span class="color-3" onclick="SetActiveStyle('color-3')"></span>
+                <span class="color-4" onclick="SetActiveStyle('color-4')"></span>
+                <span class="color-5" onclick="SetActiveStyle('color-5')"></span>
             </div>
         </div>
-        <script src="js/script.js"></script>
-        <script src="styleSwitcher.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+
+
+    </div>
+
+
+
+    <script src="js/script.js"></script>
+    <script src="styleSwitcher.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
 
 </body>
 

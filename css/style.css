@@ -141,11 +141,13 @@
         
         .aside .nav {
             margin-top: 50px;
+            position: relative;
         }
         
         .aside .nav li {
             margin-bottom: 20px;
             display: block;
+            position: relative;
         }
         
         .aside .nav li:hover {
@@ -187,6 +189,9 @@
         
         .main-content {
             padding-left: 270px;
+            position: relative;
+            overflow-y: scroll;
+            height: auto;
         }
         
         .home {
