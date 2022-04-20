@@ -23,6 +23,29 @@
     <link rel="stylesheet" href="css/color-3.css" class="alternate-style" title="color-3" disabled>
     <link rel="stylesheet" href="css/color-4.css" class="alternate-style" title="color-4" disabled>
     <link rel="stylesheet" href="css/color-5.css" class="alternate-style" title="color-5" disabled>
+
+    <script src="js/script.js"></script>
+    <script src="styleSwitcher.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let letter = 0;
+            const text = "Software Developer";
+
+            function typeText() {
+                if (letter < text.length) {
+                    document.getElementById("profession").innerHTML += text.charAt(letter);
+                    letter++;
+                    let speed = Math.floor(Math.random() * 150) + 50;
+                    setTimeout(typeText, speed);
+                }
+            }
+
+            typeText();
+
+
+        });
+    </script>
+
     <title>Trust Idiong | Personal Website</title>
 </head>
 
@@ -45,7 +68,7 @@
             <div id="nav-list" class="list-group">
                 <a class="list-group-item list-group-item-action" href="#home"><i class="fa fa-home"></i>Home</a>
                 <a class="list-group-item list-group-item-action" href="#about"><i class="fa fa-user"></i>About</a>
-                <a class="list-group-item list-group-item-action" href="#services"><i class="fa fa-user"></i>Services</a>
+                <a class="list-group-item list-group-item-action" href="#services"><i class="fa fa-list"></i>Services</a>
                 <a class="list-group-item list-group-item-action" href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a>
                 <a class="list-group-item list-group-item-action" href="#contact"><i class="fa fa-comments"></i>Contact</a>
             </div>
@@ -58,7 +81,7 @@
                 <div class="row">
                     <div class="home-info padd-15">
                         <h3 class="hello">Hello, my name is <span class="name">Trust Idiong</span></h3>
-                        <h3 class="my-profession">I am a <span class="typing">Software Developer</span></h3>
+                        <h3 class="my-profession">I am a <span class="typing" id="profession"></span></h3>
                         <p>I am a software developer with amazing capabilities in Web Site Design & Development, Object-Oriented Programming, Project Teamwork & Communication, Agile software development, and many more ...
                         </p>
                         <a href="#contact" class="btn hire-me">Hire Me</a>
@@ -111,7 +134,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="buttons padd-15">
-                                        <a href="#" class="btn">Download CV</a>
+                                        <a href="TRUST-RESUME.pdf" class="btn" download>Download CV</a>
                                         <a href="#contact" class="btn hire-me">Hire Me</a>
                                     </div>
                                 </div>
@@ -378,6 +401,7 @@
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
+                                    <h5 class="card-title">Transcription software</h5>
                                     <!-- <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>-->
                                     <button type="button" class="close" id="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
@@ -387,8 +411,8 @@
                                     <div class="card mb-3">
                                         <img class="card-img-top" src="images/1.PNG" alt="Card image cap">
                                         <div class="card-body">
-                                            <h5 class="card-title card-title1">Transcription software</h5>
-                                            <p class="card-text card-text1">This was a speech-to-text transcription software built to client specification. It was also a language recognizer and could identify up to <strong>255</strong> languages. The software was built to aid communication
+
+                                            <p class="card-text timeline-text">This was a speech-to-text transcription software built to client specification. It was also a language recognizer and could identify up to <strong>255</strong> languages. The software was built to aid communication
                                                 with deaf persons.</p>
                                             <p class="card-text"><small class="text-muted">Completed and delivered</small></p>
                                         </div>
@@ -405,16 +429,17 @@
                     <div class="portfolio-item padd-15">
                         <div class="portfolio-item-inner shadow-dark">
                             <div class="portfolio-img">
-                                <img src="images/2.PNG" alt="" data-toggle="modal" data-target="#transcriptionSoftware" />
+                                <img src="images/2.PNG" alt="" data-toggle="modal" data-target="#student-forum" />
 
                             </div>
                         </div>
                     </div>
                     <!-- Modal -->
-                    <div class="modal fade" id="transcriptionSoftware" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                    <div class="modal fade" id="student-forum" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
+                                    <h5 class="card-title ">Students online forum</h5>
                                     <!-- <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>-->
                                     <button type="button" class="close" id="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
@@ -424,8 +449,8 @@
                                     <div class="card mb-3">
                                         <img class="card-img-top" src="images/2.PNG" alt="Card image cap">
                                         <div class="card-body">
-                                            <h5 class="card-title card-title1">Students online forum</h5>
-                                            <p class="card-text card-text1">This was a speech-to-text transcription software built to client specification. It was also a language recognizer and could identify up to <strong>255</strong> languages. The software was built to aid communication
+
+                                            <p class="card-text timeline-text">This was a speech-to-text transcription software built to client specification. It was also a language recognizer and could identify up to <strong>255</strong> languages. The software was built to aid communication
                                                 with deaf persons.</p>
                                             <p class="card-text"><small class="text-muted">Completed and delivered</small></p>
                                         </div>
@@ -444,17 +469,17 @@
                     <div class="portfolio-item padd-15">
                         <div class="portfolio-item-inner shadow-dark">
                             <div class="portfolio-img">
-                                <img src="images/3.PNG" alt="" data-toggle="modal" data-target="#transcriptionSoftware" />
+                                <img src="images/3.PNG" alt="" data-toggle="modal" data-target="#AutosBlog" />
 
                             </div>
                         </div>
                     </div>
                     <!-- Modal -->
-                    <div class="modal fade" id="transcriptionSoftware" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                    <div class="modal fade" id="AutosBlog" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <!-- <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>-->
+                                    <h5 class="card-title">Autos Blog</h5>
                                     <button type="button" class="close" id="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                   </button>
@@ -463,8 +488,7 @@
                                     <div class="card mb-3">
                                         <img class="card-img-top" src="images/3.PNG" alt="Card image cap">
                                         <div class="card-body">
-                                            <h5 class="card-title card-title1">Autos Blog</h5>
-                                            <p class="card-text card-text1">This was a speech-to-text transcription software built to client specification. It was also a language recognizer and could identify up to <strong>255</strong> languages. The software was built to aid communication
+                                            <p class="card-text timeline-text">This was a speech-to-text transcription software built to client specification. It was also a language recognizer and could identify up to <strong>255</strong> languages. The software was built to aid communication
                                                 with deaf persons.</p>
                                             <p class="card-text"><small class="text-muted">Completed and delivered</small></p>
                                         </div>
@@ -481,17 +505,17 @@
                     <div class="portfolio-item padd-15">
                         <div class="portfolio-item-inner shadow-dark">
                             <div class="portfolio-img">
-                                <img src="images/4.PNG" alt="" data-toggle="modal" data-target="#transcriptionSoftware" />
+                                <img src="images/4.PNG" alt="" data-toggle="modal" data-target="#LMS-Software" />
 
                             </div>
                         </div>
                     </div>
                     <!-- Modal -->
-                    <div class="modal fade" id="transcriptionSoftware" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                    <div class="modal fade" id="LMS-Software" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <!-- <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>-->
+                                    <h5 class="card-title card-title1">Learning Management System</h5>
                                     <button type="button" class="close" id="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                   </button>
@@ -500,8 +524,8 @@
                                     <div class="card mb-3">
                                         <img class="card-img-top" src="images/4.PNG" alt="Card image cap">
                                         <div class="card-body">
-                                            <h5 class="card-title card-title1">Learning Management System</h5>
-                                            <p class="card-text card-text1">This was a speech-to-text transcription software built to client specification. It was also a language recognizer and could identify up to <strong>255</strong> languages. The software was built to aid communication
+
+                                            <p class="card-text timeline-text">This was a speech-to-text transcription software built to client specification. It was also a language recognizer and could identify up to <strong>255</strong> languages. The software was built to aid communication
                                                 with deaf persons.</p>
                                             <p class="card-text"><small class="text-muted">Completed and delivered</small></p>
                                         </div>
@@ -518,17 +542,17 @@
                     <div class="portfolio-item padd-15">
                         <div class="portfolio-item-inner shadow-dark">
                             <div class="portfolio-img">
-                                <img src="images/5.PNG" alt="" data-toggle="modal" data-target="#transcriptionSoftware" />
+                                <img src="images/5.PNG" alt="" data-toggle="modal" data-target="#plagChecker" />
 
                             </div>
                         </div>
                     </div>
                     <!-- Modal -->
-                    <div class="modal fade" id="transcriptionSoftware" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                    <div class="modal fade" id="plagChecker" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <!-- <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>-->
+                                    <h5 class="card-title">Plagiarism Checker</h5>
                                     <button type="button" class="close" id="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                   </button>
@@ -537,8 +561,8 @@
                                     <div class="card mb-3">
                                         <img class="card-img-top" src="images/5.PNG" alt="Card image cap">
                                         <div class="card-body">
-                                            <h5 class="card-title card-title1">Plagiarism Checker</h5>
-                                            <p class="card-text card-text1">This was a speech-to-text transcription software built to client specification. It was also a language recognizer and could identify up to <strong>255</strong> languages. The software was built to aid communication
+
+                                            <p class="card-text timeline-text">This was a speech-to-text transcription software built to client specification. It was also a language recognizer and could identify up to <strong>255</strong> languages. The software was built to aid communication
                                                 with deaf persons.</p>
                                             <p class="card-text"><small class="text-muted">Completed and delivered</small></p>
                                         </div>
@@ -555,17 +579,17 @@
                     <div class="portfolio-item padd-15">
                         <div class="portfolio-item-inner shadow-dark">
                             <div class="portfolio-img">
-                                <img src="images/6.PNG" alt="" data-toggle="modal" data-target="#transcriptionSoftware" />
+                                <img src="images/6.PNG" alt="" data-toggle="modal" data-target="#crowd1" />
 
                             </div>
                         </div>
                     </div>
                     <!-- Modal -->
-                    <div class="modal fade" id="transcriptionSoftware" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                    <div class="modal fade" id="crowd1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <!-- <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>-->
+                                    <h5 class="card-title">Crowd1 Networking Page</h5>
                                     <button type="button" class="close" id="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                   </button>
@@ -574,8 +598,7 @@
                                     <div class="card mb-3">
                                         <img class="card-img-top" src="images/6.PNG" alt="Card image cap">
                                         <div class="card-body">
-                                            <h5 class="card-title card-title1">Crowd Networking Page</h5>
-                                            <p class="card-text card-text1">This was a speech-to-text transcription software built to client specification. It was also a language recognizer and could identify up to <strong>255</strong> languages. The software was built to aid communication
+                                            <p class="card-text timeline-text">This was a speech-to-text transcription software built to client specification. It was also a language recognizer and could identify up to <strong>255</strong> languages. The software was built to aid communication
                                                 with deaf persons.</p>
                                             <p class="card-text"><small class="text-muted">Completed and delivered</small></p>
                                         </div>
@@ -603,92 +626,119 @@
                 <div class="row">
                     <!--Contact item-->
                     <div class="contact-info-item padd-15">
-                        <div class="icon"><i class="fa fa-phone"></i></div>
-                        <h4>Call Us On:</h4>
-                        <p>+234 706 8523 614</p>
+                        <a href="tel:+2348156641084">
+                            <div class="icon"><i class="fa fa-phone"></i></div>
+                            <h4>Call Us On:</h4>
+                            <p>+234 815 6641 084</p>
+                        </a>
+                    </div>
+
+                    <!--Contact item-->
+                    <div class="contact-info-item padd-15">
+                        <a href="mailto:itrust.ti@gmail.com">
+                            <div class="icon"> <i class="fa fa-envelope"></i> </div>
+                            <h4>Email:</h4>
+                            <p>itrust.ti@gmail.com</p>
+                        </a>
+                    </div>
+
+                    <!--Contact item-->
+                    <div class="contact-info-item padd-15">
+                        <a href="https://wa.me/07068534612">
+                            <div class="icon"><i class="fa-brands fa-whatsapp"></i></div>
+                            <h4>Whatsapp:</h4>
+                            <p>+234 706 8523 614</p>
+                        </a>
                     </div>
                     <!--Contact item-->
                     <div class="contact-info-item padd-15">
-                        <div class="icon">
-                            <i class="fa fa-map-marker-alt"></i>
-                        </div>
-                        <h4>Location:</h4>
-                        <p>Lagos</p>
+                        <a href="https://www.twitter.com/IdiongTrust">
+                            <div class="icon"> <i class="fa-brands fa-twitter"></i> </div>
+                            <h4>Twitter:</h4>
+                            <p>@IdiongTrust</p>
+                        </a>
                     </div>
                     <!--Contact item-->
                     <div class="contact-info-item padd-15">
-                        <div class="icon"> <i class="fa fa-envelope"></i></div>
-                        <h4>Email:</h4>
-                        <p>itrust.ti@gmail.com</p>
+                        <a href="https://www.linkedin.com/in/trust-idiong-08779268/">
+                            <div class="icon"> <i class="fa-brands fa-linkedin-in"></i></div>
+                            <h4>Linkedin:</h4>
+                            <p>Trust Idiong</p>
+                        </a>
                     </div>
                     <!--Contact item-->
                     <div class="contact-info-item padd-15">
-                        <div class="icon">
-                            <i class="fa fa-globe-europe"></i>
-                        </div>
-                        <h4>Website:</h4>
-                        <p>www.domain.com</p>
+                        <a href="https://www.facebook.com/trust.idiong">
+                            <div class="icon">
+                                <i class="fa-brands fa-facebook"></i>
+                            </div>
+                            <h4>Facebook</h4>
+                            <p>Trust Idiong</p>
+                        </a>
                     </div>
                 </div>
                 <h3 class="contact-title padd-15">SEND ME AN EMAIL</h3>
                 <h4 class="contact-sub-title padd-15">I'M VERY RESPONSIVE TO MESSAGES</h4>
                 <!-- CONTACT FORM -->
                 <div class="row">
-                    <form name="contact" method="POST" data-netlify="true">
-                        <div class="contact-form padd-15">
-                            <div class="row">
-                                <div class="form-item col-6 padd-15">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Name">
-                                    </div>
-                                </div>
-                                <div class="form-item col-6 padd-15">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Email">
-                                    </div>
+
+                    <div class="contact-form padd-15">
+                        <div class="row">
+                            <div class="form-item col-6 padd-15">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Name">
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="form-item col-12 padd-15">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Subject">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-item col-12 padd-15">
-                                    <div class="form-group">
-                                        <textarea type="text" class="form-control" placeholder="Message">
-                                             
-                                        </textarea>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-item col-12 padd-15">
-                                    <button class="btn" type="submit">Send Message</button>
+                            <div class="form-item col-6 padd-15">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Email">
                                 </div>
                             </div>
                         </div>
-                    </form>
+                        <div class="row">
+                            <div class="form-item col-12 padd-15">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Subject">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-item col-12 padd-15">
+                                <div class="form-group">
+                                    <textarea type="text" class="form-control" placeholder="Message">
+                                             
+                                        </textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-item col-12 padd-15">
+                                <button class="btn" type="submit">Send Message</button>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
         </div>
-        <div class="style-switcher">
-            <div class="style-swithcer-toggler s-icon">
+        <div class="style-switcher" id="style-switcher">
+            <div class="style-swithcer-toggler s-icon" onclick="toggleSkin()">
                 <i class="fas fa-cog fa-spin"></i>
             </div>
-            <div class="day-night s-icon">
+            <div class="day-night s-icon" onclick="changeMode()">
                 <i class="fas fa-moon"></i>
             </div>
-            <h4>Theme Colors</h4>
-            <div class="colors">
-                <span class="color-1" onclick="SetActiveStyle('color-1')"></span>
-                <span class="color-2" onclick="SetActiveStyle('color-2')"></span>
-                <span class="color-3" onclick="SetActiveStyle('color-3')"></span>
-                <span class="color-4" onclick="SetActiveStyle('color-4')"></span>
-                <span class="color-5" onclick="SetActiveStyle('color-5')"></span>
+            <div id="skin-colors">
+                <h4>Theme Colors</h4>
+                <div class="colors">
+                    <span class="color-1" onclick="redSkin()"></span>
+                    <span class="color-2" onclick="orangeSkin()"></span>
+                    <span class="color-3" onclick="greenSkin()"></span>
+                    <span class="color-4" onclick="blueSkin()"></span>
+                    <span class="color-5" onclick="pinkSkin()"></span>
+
+                </div>
             </div>
         </div>
 
@@ -697,9 +747,7 @@
 
 
 
-    <script src="js/script.js"></script>
-    <script src="styleSwitcher.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+
 
 </body>
 
