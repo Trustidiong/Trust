@@ -104,6 +104,10 @@
             right: 0;
         }
         
+        .navbar {
+            display: none;
+        }
+        
         .aside .nav-toggler {
             height: 40px;
             width: 45px;
@@ -159,6 +163,10 @@
             position: relative;
             border: none;
             border-radius: 5px;
+        }
+        
+        .list-group-item .list-group-item-action {
+            background: var(--skin-color);
         }
         
         .aside .nav li:hover,
@@ -349,6 +357,7 @@
             font-size: 16px;
             font-weight: 500;
             padding: 12px 35px;
+            margin-top: 10px;
             color: white;
             border-radius: 40px;
             background-color: var(--skin-color);
@@ -608,11 +617,10 @@
         #close {
             width: 40px;
             height: 40px;
-            color: var(--bg-black-900);
-            background: var(--skin-color);
-            border: none;
+            color: var(--skin-color);
+            background: none;
+            border: 2px solid;
             border-radius: 50%;
-            opacity: 0.5;
         }
         
         #close:hover {
@@ -763,6 +771,12 @@
             .service .service-item {
                 flex: 0 0 50%;
                 max-width: 50%;
+            }
+            navbar {
+                display: inline;
+            }
+            .navbar-toggler {
+                border: none;
             }
         }
         
