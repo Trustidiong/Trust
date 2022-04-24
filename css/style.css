@@ -582,7 +582,8 @@
             transition: all 0.3s ease;
         }
         
-        .service .service-item .service-item-inner .icon .fa {
+        .service .service-item .service-item-inner .icon .fa,
+        .service .service-item .service-item-inner .icon .fa-regular {
             line-height: 60px;
             font-size: 40px;
             color: var(--skin-color);
@@ -593,7 +594,8 @@
             background-color: var(--skin-color);
         }
         
-        .service .service-item .service-item-inner .icon .fa:hover {
+        .service .service-item .service-item-inner .icon .fa:hover,
+        .service .service-item .service-item-inner .icon .fa-regular:hover {
             font-size: 25px;
             color: white;
         }
